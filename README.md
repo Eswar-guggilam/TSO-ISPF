@@ -20,6 +20,11 @@ ISPF (Interactive System Productivity Facility) is a powerful mainframe editor t
     - Reorders lines based on specified columns.
     - Example: `SORT 12 20 D` (sort data based on columns 12-20 in descending order)
     - Can sort on multiple columns and specify ascending/descending order.
+
+* **Search for:**
+    - Locates specific text patterns within PDS members or the whole 3.4 filter.
+        - Example: `SRCHFOR 'INFILE-COPYBOOK'` (find members containing "INFILE-COPYBOOK").
+
 * **Change:**
     - Replaces text within a member.
         - Example 1 (replace first occurrence of "ibm" with "bmi"): `C/CHANGE 'ibm' 'bmi'`
@@ -49,7 +54,7 @@ ISPF (Interactive System Productivity Facility) is a powerful mainframe editor t
             2. `C * 'DDD'` (replace all with "ddd")
     - Equivalent to `C ALL DD DDD`.
 * **Retp (History):**
-    - Shows ISPF command history for easy reuse.
+    - It shows the ISPF command history for easy reuse.
     - Type `RETP` in the command field.
 * **History Shortcut:**
     - Press `SHIFT+F12` repeatedly to cycle through previous commands.
@@ -70,4 +75,19 @@ ISPF (Interactive System Productivity Facility) is a powerful mainframe editor t
     - View clipboard history with `CUT DISPLAY`.
 * **Highlight:**
     - `HI AUTO` Automatically highlight any type of code (COBOL, JCL, REXX,...).
+
+* **Sort:**
+    - Reorders lines based on specified columns.
+        - Example: `SORT 12 D` (sort by column 12 in descending order)
+    - Can sort on multiple columns and specify ascending/descending order.
+
+* **Bounds:**
+    - Sets the left and right margins for editing specific sections of lines. '<' represents left & '>' represents right boundary for the dataset
+    - Give `BOUND` in line numbers and give below cmd on ispf cmd line.
+        - Example: `BOUNDS 10 40` (Adds one line to show left boundary(col 10) & right boundary(col 40) in the member)
+
+
+
+
 * **
+**Thank you & any contributions are tolarated**
