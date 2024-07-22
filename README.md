@@ -76,10 +76,10 @@ ISPF (Interactive System Productivity Facility) is a powerful mainframe editor t
 * **Highlight:**
     - `HI AUTO` Automatically highlight any type of code (COBOL, JCL, REXX,...).
 
-* **Sort:**
-    - Reorders lines based on specified columns.
-        - Example: `SORT 12 D` (sort by column 12 in descending order)
-    - Can sort on multiple columns and specify ascending/descending order.
+* **DSLIST:**
+    - Like 3.4, You can give any filters to get the datasets
+        - Example: `DSLIST IBMUSER.JCL*` 
+    - A simple way to get datasets without opening 3.4.
 
 * **Bounds:**
     - Sets the left and right margins for editing specific sections of lines. '<' represents left & '>' represents right boundary for the dataset
